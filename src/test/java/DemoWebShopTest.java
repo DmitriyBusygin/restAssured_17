@@ -26,7 +26,6 @@ public class DemoWebShopTest {
                             .body("updatetopcartsectionhtml", is("(2)"))
                             .extract().cookie("Nop.customer");
 
-
             step("Set cookie to browser", () -> {
                 open("http://demowebshop.tricentis.com/");
                 Cookie ck = new Cookie("Nop.customer",authorizationCookie);
